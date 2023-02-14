@@ -106,7 +106,7 @@ public class PluginToggle extends Plugin
 	protected List<String> parsePluginsList(String pluginsStr) {
 		List<String> pluginsList = new ArrayList<>();
 		for (String p : pluginsStr.split(",")) {
-			pluginsList.add(p.strip());
+			pluginsList.add(p.trim());
 		}
 		return pluginsList;
 	}
